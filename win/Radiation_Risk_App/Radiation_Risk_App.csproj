@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5BE9112-00EA-42EF-92A7-2FFDC938CF45}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Radiation_Risk_App</RootNamespace>
+    <AssemblyName>Radiation_Risk_App</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Radiation_Risk_App.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Radiation_Risk_App.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WPCordovaClassLib">
+      <HintPath>GapLib\WPCordovaClassLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CordovaSourceDictionary.xml" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile.structure-1.3.0.min.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\jqm-docs\css\jquery.mobile.scrollview.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile.theme-1.3.0.min.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile.structure-1.3.0.css" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\twitter-bootstrap.min.css" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile.theme-1.3.0.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-arrow-white-right.png" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\images\ajax-loader.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile-1.3.0.min.css" />
+		<Content Include="www\\files\resources\lib\carousel-css-jquery-plugin\jquery.toucharea.js" />
+		<Content Include="www\\files\resources\lib\theme\twitter-bootstrap\twitter-bootstrap.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile-1.3.0.min.js" />
+		<Content Include="www\\files\resources\lib\carousel-css-jquery-plugin\jquery.carousel.js" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-arrow-white-down.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-arrow-white-left.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-arrow-white-up.png" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\datepicker\jquery.ui.datepicker.mobile.css" />
+		<None Include="www\\files\views\assets\image\CarePassIcon1024-748.png1363692554428" />
+		<Content Include="www\\files\resources\lib\exadel-carousel\jquery.mobile.carousel.css" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\images\icons-18-white.png" />
+		<None Include="www\\files\views\assets\image\CarePassIcon768-1004.png1363692554023" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\backButtonSprite.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile-1.3.0.css" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\images\icons-36-black.png" />
+		<None Include="www\\files\views\assets\image\CarePassIcon640-1136.png1363692553764" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\jquery.mobile-1.3.0.js" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\datepicker\jquery.ui.datepicker.mobile.js" />
+		<Content Include="www\\files\resources\lib\jquerymobile\1.3.0\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\images\icons-18-black.png" />
+		<None Include="www\\files\views\assets\image\CarePassIcon640-960.png1363692553565" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-search-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-minus-white.png" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\tiling_stripes.gif" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\jquery.mobile.scrollview.js" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\jquery-ui-map\jquery.ui.map.full.min.js" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-plus-white.png" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\pastel\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\pastel\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\jqm-docs\css\jqm-docs.css" />
+		<Content Include="www\\files\resources\lib\theme\gelato\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\pastel\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\gelato\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\winter\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\form-radio-off.png" />
+		<Content Include="www\\files\resources\lib\theme\gelato\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\jquery-ui-youtube\jquery.ui.youtube.js" />
+		<Content Include="www\\files\resources\lib\theme\pastel\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\winter\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\form-check-off.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\gelato\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\winter\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\winter\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\olive\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\form-radio-on.png" />
+		<Content Include="www\\files\resources\lib\theme\olive\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\olive\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\form-check-on.png" />
+		<Content Include="www\\files\resources\lib\theme\olive\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui-southstreet.datepick.css" />
+		<Content Include="www\\files\views\assets\image\CarepassSyncSquareButton_2x.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui-swankypurse.datepick.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\jqm-docs\js\jqm-docs.js" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui-uilightness.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\icon-delete.png" />
+		<Content Include="www\\files\resources\lib\theme\jqm\images\icons-36-white.png" />
+		<Content Include="www\\files\resources\lib\jquery-ui-map\jquery.ui.map.full.js" />
+		<Content Include="www\\files\resources\lib\datepick\ui-excitebike.datepick.css" />
+		<Content Include="www\\files\views\assets\image\carepass_launcher_icon_512.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui-trontastic.datepick.css" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\ajax-loader.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui-uidarkness.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\gelato\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\datepick\ui-smoothness.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\jqm\images\icons-36-black.png" />
+		<Content Include="www\\files\resources\lib\theme\jqm\images\icons-18-black.png" />
+		<Content Include="www\\files\resources\lib\theme\pastel\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\jquery\plugins\jquery.easing.1.3.js" />
+		<Content Include="www\\files\resources\lib\jquerymobile\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\theme\jqm\images\icons-18-white.png" />
+		<Content Include="www\\files\resources\lib\theme\winter\images\ajax-loader.gif" />
+		<None Include="www\\files\resources\lib\theme\ios7\images\iconsetIOS7.woff" />
+		<Content Include="www\\files\resources\lib\datepick\ui-cupertino.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-hotsneaks.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepicker\jQuery.ui.datepicker.js" />
+		<Content Include="www\\files\resources\lib\theme\olive\images\ajax-loader.gif" />
+		<None Include="www\\files\resources\lib\theme\ios7\images\iconsetIOS7.eot" />
+		<Content Include="www\\files\resources\lib\datepick\jquery.datepick-en-GB.js" />
+		<Content Include="www\\files\resources\lib\datepick\ui-humanity.datepick.css" />
+		<None Include="www\\files\resources\lib\theme\ios7\images\iconsetIOS7.ttf" />
+		<Content Include="www\\files\resources\lib\datepick\ui-mintchoc.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-blacktie.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\iconsetIOS7.svg" />
+		<Content Include="www\\files\resources\lib\theme\ios7\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\datepick\smoothness.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\jqm\images\ajax-loader.gif" />
+		<Content Include="www\\files\resources\lib\datepick\ui-redmond.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-blitzer.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\ios-like.min.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-dotluv.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\cappuccino\cappuccino.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-start.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepick\ui-vader.datepick.css" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon2048-1496.png" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon1536-2008.png" />
+		<Content Include="www\\files\resources\lib\datepick\humanity.datepick.css" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\flat-ui.min.css" />
+		<Content Include="www\\files\resources\lib\datepick\redmond.datepick.css" />
+		<Content Include="www\\files\views\assets\image\imgres-2_1374007522.jpeg" />
+		<Content Include="www\\files\resources\lib\theme\CarePass2\CarePass2.css" />
+		<Content Include="www\\files\views\assets\image\imgres-1_1374007521.jpeg" />
+		<Content Include="www\\files\views\assets\image\imgres-3_1374007522.jpeg" />
+		<Content Include="www\\files\resources\lib\datepick\datepickBasics.html" />
+		<Content Include="www\\files\resources\lib\datepick\jquery.datepick.css" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon320-480.png" />
+		<Content Include="www\\files\views\assets\image\imgres_1374007522.jpeg" />
+		<Content Include="www\\files\resources\lib\theme\ios-like\ios-like.css" />
+		<Content Include="www\\files\resources\lib\theme\CarePass\CarePass.css" />
+		<Content Include="www\\files\resources\lib\theme\dendrite\dendrite.css" />
+		<Content Include="www\\files\resources\lib\datepick\calendar-green.gif" />
+		<Content Include="www\\files\views\assets\image\images_1374007521.jpeg" />
+		<Content Include="www\\files\resources\lib\base\jquery.xml2json.min.js" />
+		<Content Include="www\\files\resources\lib\datepick\jquery.datepick.js" />
+		<Content Include="www\\files\views\assets\image\health_care_shield.png" />
+		<Content Include="www\\files\resources\lib\exadel-carousel\carousel.js" />
+		<Content Include="www\\files\resources\lib\event\customEventHandler.js" />
+		<Content Include="www\\files\resources\lib\datepick\flora.datepick.css" />
+		<Content Include="www\\files\resources\lib\datepick\calendar-blue.gif" />
+		<Content Include="www\\files\resources\lib\jquery\jquery-1.8.2.min.js" />
+		<Content Include="www\\files\resources\lib\theme\flat-ui\flat-ui.css" />
+		<Content Include="www\\files\views\assets\image\Remove_tooth_SH.png" />
+		<Content Include="www\\files\views\assets\image\logo_1374163713.png" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon144.png" />
+		<Content Include="www\\files\resources\lib\datepick\ui.datepick.css" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon114.png" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon57.png" />
+		<Content Include="www\\files\resources\lib\theme\pastel\pastel.css" />
+		<Content Include="www\\files\views\assets\image\icons-18-white.png" />
+		<Content Include="www\\files\resources\image\icon-search-cover.png" />
+		<Content Include="www\\files\resources\lib\theme\gelato\gelato.css" />
+		<Content Include="www\\files\views\assets\image\icons-18-black.png" />
+		<Content Include="www\\files\views\assets\image\icons-36-white.png" />
+		<Content Include="www\\files\views\assets\image\icons-36-black.png" />
+		<Content Include="www\\files\views\assets\image\CarePassIcon72.png" />
+		<Content Include="www\\files\resources\lib\theme\winter\winter.css" />
+		<Content Include="www\\files\views\assets\image\Add_patient_SH.png" />
+		<Content Include="www\\files\views\assets\image\asthma_inhaler.png" />
+		<Content Include="www\\files\views\assets\image\hospital_nurse.png" />
+		<Content Include="www\\files\views\assets\image\medical-vista.jpg" />
+		<Content Include="www\\files\resources\lib\get_target_platform.js" />
+		<Content Include="www\\files\views\assets\image\ambulance_car.png" />
+		<Content Include="www\\files\resources\lib\jquery\jquery-1.8.2.js" />
+		<Content Include="www\\files\views\assets\image\first_aid_kit.png" />
+		<Content Include="www\\files\views\assets\css\CarePass_Styles.css" />
+		<Content Include="www\\files\views\assets\js\services\service.js" />
+		<Content Include="www\\files\resources\lib\theme\olive\olive.css" />
+		<Content Include="www\\files\resources\lib\base\jquery.base64.js" />
+		<Content Include="www\\files\resources\lib\datepick\calendar.gif" />
+		<Content Include="www\\files\views\assets\image\Remove_tooth.png" />
+		<Content Include="www\\CarePass_BodyMeasurementsType_Filter.html" />
+		<Content Include="www\\files\views\assets\image\stethoscope.png" />
+		<Content Include="www\\files\views\assets\image\sound_tooth.png" />
+		<Content Include="www\\CarePass_BodyMeasurementsType_Filter.css" />
+		<Content Include="www\\files\views\assets\image\Add_patient.png" />
+		<Content Include="www\\files\views\assets\js\CarePass_Login.js" />
+		<Content Include="www\\files\views\assets\image\microscope.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_TimeLine.html" />
+		<Content Include="www\\files\views\assets\image\Surgeon_SH.png" />
+		<Content Include="www\\files\views\assets\image\cardiology.png" />
+		<Content Include="www\\files\resources\lib\theme\ios7\ios7.css" />
+		<Content Include="www\\CarePass_BodyMeasurementsType_Filter.js" />
+		<Content Include="www\\files\resources\lib\PushNotification.js" />
+		<Content Include="www\\files\views\assets\image\emergency.png" />
+		<Content Include="www\\files\views\assets\image\imgres-3.jpeg" />
+		<Content Include="www\\files\views\assets\image\imgres-1.jpeg" />
+		<Content Include="www\\CarePass_Fitness_Activity_TimeLine.css" />
+		<Content Include="www\\files\views\assets\image\ambulance.png" />
+		<Content Include="www\\files\resources\image\mobilecamera.png" />
+		<Content Include="www\\files\views\assets\image\imgres-2.jpeg" />
+		<Content Include="www\\files\resources\lib\vimeo\vimeo.lib.js" />
+		<Content Include="www\\CarePass_Fitness_Activity_Single.html" />
+		<Content Include="www\\CarePass_Fitness_Activity_TimeLine.js" />
+		<Content Include="www\\files\resources\lib\theme\jqm\jqm.css" />
+		<Content Include="www\\CarePass_BodyMeasurements_Single.html" />
+		<Content Include="www\\files\resources\lib\barcodescanner.js" />
+		<Content Include="www\\CarePass_Fitness_Activity_Filter.html" />
+		<Content Include="www\\files\views\assets\image\plaster.png" />
+		<Content Include="www\\files\views\assets\image\Surgeon.png" />
+		<Content Include="www\\files\resources\lib\base\jsonpath.js" />
+		<Content Include="www\\files\views\assets\image\toddler.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_Filter.css" />
+		<Content Include="www\\files\views\assets\image\images.jpeg" />
+		<Content Include="www\\CarePass_Fitness_Activity_Single.css" />
+		<Content Include="www\\CarePass_BodyMeasurements_Single.css" />
+		<Content Include="www\\files\resources\lib\base\contexts.js" />
+		<Content Include="www\\files\views\assets\image\imgres.jpeg" />
+		<Content Include="www\\files\views\assets\image\patient.png" />
+		<Content Include="www\\files\resources\lib\store\jstore.js" />
+		<Content Include="www\\CarePass_BodyMeasurements_Single.js" />
+		<Content Include="www\\CarePass_Fitness_Activity_Single.js" />
+		<Content Include="www\\files\views\assets\image\doctor.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_Filter.js" />
+		<Content Include="www\\files\resources\lib\childbrowser.js" />
+		<Content Include="www\\files\views\assets\image\login.png" />
+		<Content Include="www\\files\resources\css\mobilebase.css" />
+		<Content Include="www\\files\resources\lib\base\appery.js" />
+		<Content Include="www\\files\resources\image\no-image.jpg" />
+		<Content Include="www\\files\views\assets\image\heart.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_New.html" />
+		<Content Include="www\\files\resources\lib\store\json2.js" />
+		<Content Include="www\\files\views\assets\image\nurse.png" />
+		<Content Include="www\\CarePass_BodyMeasurements_New.html" />
+		<Content Include="www\\files\views\assets\image\death.png" />
+		<Content Include="www\\files\views\assets\image\brain.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_All.html" />
+		<Content Include="www\\CarePass_BodyMeasurements_New.css" />
+		<Content Include="www\\CarePass_Fitness_Activity_New.css" />
+		<Content Include="www\\files\resources\lib\base\oauth.js" />
+		<Content Include="www\\files\views\assets\js\Validate.js" />
+		<Content Include="www\\CarePass_Fitness_Activity_All.css" />
+		<Content Include="www\\files\views\assets\image\logo.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_All.js" />
+		<Content Include="www\\files\resources\lib\base\sha1.js" />
+		<Content Include="www\\CarePass_BodyMeasurements_New.js" />
+		<Content Include="www\\files\views\assets\image\DNA.png" />
+		<Content Include="www\\CarePass_Fitness_Activity_New.js" />
+		<Content Include="www\\files\resources\js\mobilebase.js" />
+		<Content Include="www\\files\views\assets\js\Helper.js" />
+		<Content Include="www\\files\views\assets\js\Charts.js" />
+		<Content Include="www\\CarePass_BodyMeasurements.html" />
+		<Content Include="www\\files\resources\lib\cordova.js" />
+		<Content Include="www\\CarePass_BodyMeasurements.css" />
+		<Content Include="www\\CarePass_BodyMeasurements.js" />
+		<Content Include="www\\CarePass_ErrorPopUp.html" />
+		<Content Include="www\\CarePass_ErrorPopUp.css" />
+		<Content Include="www\\CarePass_ErrorPopUp.js" />
+		<Content Include="www\\CarePass_Login.html" />
+		<Content Include="www\\CarePass_Chart.html" />
+		<Content Include="www\\CarePass_Chart.css" />
+		<Content Include="www\\CarePass_Login.css" />
+		<Content Include="www\\CarePass_Login.js" />
+		<Content Include="www\\CarePass_Chart.js" />
+		<Content Include="www\\Disclaimer.html" />
+		<Content Include="www\\descriptor.txt" />
+		<Content Include="www\\Disclaimer.css" />
+		<Content Include="www\\Disclaimer.js" />
+		<Content Include="www\\details.html" />
+		<Content Include="www\\cancer.html" />
+		<Content Include="www\\action.html" />
+		<Content Include="www\\details.css" />
+		<Content Include="www\\cancer.css" />
+		<Content Include="www\\action.css" />
+		<Content Include="www\\details.js" />
+		<Content Include="www\\tests.html" />
+		<Content Include="www\\index.html" />
+		<Content Include="www\\start.html" />
+		<Content Include="www\\load.html" />
+		<Content Include="www\\tests.css" />
+		<Content Include="www\\action.js" />
+		<Content Include="www\\map2.html" />
+		<Content Include="www\\start.css" />
+		<Content Include="www\\body.html" />
+		<Content Include="www\\link.html" />
+		<Content Include="www\\cancer.js" />
+		<Content Include="www\\start.js" />
+		<Content Include="www\\map2.css" />
+		<Content Include="www\\tests.js" />
+		<Content Include="www\\link.css" />
+		<Content Include="www\\body.css" />
+		<Content Include="www\\load.css" />
+		<Content Include="www\\map.html" />
+		<Content Include="www\\link.js" />
+		<Content Include="www\\map2.js" />
+		<Content Include="www\\map.css" />
+		<Content Include="www\\load.js" />
+		<Content Include="www\\body.js" />
+		<Content Include="www\\map.js" />
+    <None Include="BuildManifestProcessor.js" />
+    <Content Include="GapLib\WPCordovaClassLib.dll" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <PropertyGroup>
+    <PreBuildEvent>CScript "$(ProjectDir)/BuildManifestProcessor.js" "$(ProjectPath)"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

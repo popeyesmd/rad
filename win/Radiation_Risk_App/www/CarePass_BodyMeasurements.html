@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            CarePass_BodyMeasurements
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/CarePass2/CarePass2.css" rel="stylesheet"
+        />
+        <link href="files/resources/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CarePass_Styles.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/childbrowser.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Validate.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Charts.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/CarePass_Login.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        $(document).bind("mobileinit", function()
+        {
+            $.mobile.page.prototype.options.degradeInputs.date = true;
+        });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="CarePass_BodyMeasurements"
+        id="CarePass_BodyMeasurements" class="type-interior" data-theme="a" data-add-back-btn="false"
+        data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="CarePass_BodyMeasurements_mobileheader" class='mobileHeader CarePass_BodyMeasurements_mobileheader '>
+                <!-- mobilenavbar2_10 -->
+                <div data-role="navbar" id="CarePass_BodyMeasurements_mobilenavbar2_10" name="mobilenavbar2_10"
+                dsid="mobilenavbar2_10" class=" CarePass_BodyMeasurements_mobilenavbar2_10" data-theme="a"
+                style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem4_11 -->
+                        <li>
+                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="grid" id="CarePass_BodyMeasurements_mobilenavbaritem4_11"
+                            dsid="mobilenavbaritem4_11" name="mobilenavbaritem4_11">
+                            Measurements
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_12 -->
+                        <li>
+                            <a data-theme="a" data-icon="star" id="CarePass_BodyMeasurements_mobilenavbaritem4_12"
+                            dsid="mobilenavbaritem4_12" name="mobilenavbaritem4_12">
+                            New Measurement
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_13 -->
+                        <li>
+                            <a data-theme="a" data-icon="info" id="CarePass_BodyMeasurements_mobilenavbaritem4_13"
+                            dsid="mobilenavbaritem4_13" name="mobilenavbaritem4_13">
+                            Timeline
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="CarePass_BodyMeasurements_mobilecontainer" name="mobilecontainer"
+            class="mobileContent CarePass_BodyMeasurements_mobilecontainer" dsid="mobilecontainer"
+            data-theme="a">
+                <link href="CarePass_BodyMeasurements.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="CarePass_BodyMeasurements.js">
+                </script>
+                <!-- mobilecollapsblock1_24 -->
+                <div data-role="collapsible" id="CarePass_BodyMeasurements_mobilecollapsblock1_24"
+                name="mobilecollapsblock1_24" dsid="mobilecollapsblock1_24" data-collapsed="true"
+                data-theme="a" data-content-theme="a" data-iconpos='left' class='body_measurement CarePass_BodyMeasurements_mobilecollapsblock1_24 ui-corner-all'>
+                    <h3 id="CarePass_BodyMeasurements_mobilecollapsblockheader1_25" name="mobilecollapsblockheader1_25"
+                    dsid="mobilecollapsblockheader1_25">
+                        External Measurements
+                    </h3>
+                    <!-- ExternalMeasurements -->
+                    <ul data-role="listview" id="CarePass_BodyMeasurements_ExternalMeasurements" class='ExternalMeasurements CarePass_BodyMeasurements_ExternalMeasurements '
+                    name="ExternalMeasurements" dsid="ExternalMeasurements" data-inset="true" data-theme="a"
+                    data-divider-theme="b" data-count-theme="b" style="">
+                        <!-- mobilelistitem1_31 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_31 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_31" name="mobilelistitem1_31" dsid="mobilelistitem1_31"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_31 '>
+                            <h3>Height</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_33 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_33 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_33" name="mobilelistitem1_33" dsid="mobilelistitem1_33"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_33 '>
+                            <h3>Weight</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_35 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_35 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_35" name="mobilelistitem1_35" dsid="mobilelistitem1_35"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_35 '>
+                            <h3>BMI</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_37 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_37 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_37" name="mobilelistitem1_37" dsid="mobilelistitem1_37"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_37 '>
+                            <h3>Chest Circumference</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_39 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_39 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_39" name="mobilelistitem1_39" dsid="mobilelistitem1_39"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_39 '>
+                            <h3>Waist Circumference</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_41 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_41 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_41" name="mobilelistitem1_41" dsid="mobilelistitem1_41"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_41 '>
+                            <h3>Hip Circumference</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_43 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_43 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_43" name="mobilelistitem1_43" dsid="mobilelistitem1_43"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_43 '>
+                            <h3>Thigh Circumference (Right)</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_45 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_45 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_45" name="mobilelistitem1_45" dsid="mobilelistitem1_45"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_45 '>
+                            <h3>Thigh Circumference (Left)</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_47 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_47 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_47" name="mobilelistitem1_47" dsid="mobilelistitem1_47"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_47 '>
+                            <h3>Upper Arm Circumference (Right)</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_49 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_49 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_49" name="mobilelistitem1_49" dsid="mobilelistitem1_49"
+                            tabindex="2" class=' CarePass_BodyMeasurements_mobilelistitem1_49 '>
+                            <h3>Body Age</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobilecollapsblock1_27 -->
+                <div data-role="collapsible" id="CarePass_BodyMeasurements_mobilecollapsblock1_27"
+                name="mobilecollapsblock1_27" dsid="mobilecollapsblock1_27" data-collapsed="true"
+                data-theme="a" data-content-theme="a" data-iconpos='left' class='body_measurement CarePass_BodyMeasurements_mobilecollapsblock1_27 ui-corner-all'>
+                    <h3 id="CarePass_BodyMeasurements_mobilecollapsblockheader1_28" name="mobilecollapsblockheader1_28"
+                    dsid="mobilecollapsblockheader1_28">
+                        Internal Measurements
+                    </h3>
+                    <!-- InternalMeasurements -->
+                    <ul data-role="listview" id="CarePass_BodyMeasurements_InternalMeasurements" class='InternalMeasurements CarePass_BodyMeasurements_InternalMeasurements '
+                    name="InternalMeasurements" dsid="InternalMeasurements" data-inset="true" data-theme="a"
+                    data-divider-theme="b" data-count-theme="b" style="">
+                        <!-- mobilelistitem1_52 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_52 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_52" name="mobilelistitem1_52" dsid="mobilelistitem1_52"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_52 '>
+                            <h3>Blood Pressure</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_54 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_54 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_54" name="mobilelistitem1_54" dsid="mobilelistitem1_54"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_54 '>
+                            <h3>Blood Glucose</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_56 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_56 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_56" name="mobilelistitem1_56" dsid="mobilelistitem1_56"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_56 '>
+                            <h3>Heart Rate</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_58 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_58 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_58" name="mobilelistitem1_58" dsid="mobilelistitem1_58"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_58 '>
+                            <h3>PEF</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_60 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_60 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_60" name="mobilelistitem1_60" dsid="mobilelistitem1_60"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_60 '>
+                            <h3>FEV1</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_62 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_62 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_62" name="mobilelistitem1_62" dsid="mobilelistitem1_62"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_62 '>
+                            <h3>FEV6</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_64 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_64 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_64" name="mobilelistitem1_64" dsid="mobilelistitem1_64"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_64 '>
+                            <h3>Breath Index (BRI)</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_66 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_66 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_66" name="mobilelistitem1_66" dsid="mobilelistitem1_66"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_66 '>
+                            <h3>Respiratory Rate - Resting</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_68 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_68 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_68" name="mobilelistitem1_68" dsid="mobilelistitem1_68"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_68 '>
+                            <h3>Respiratory Depth - Resting</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_70 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_70 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_70" name="mobilelistitem1_70" dsid="mobilelistitem1_70"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_70 '>
+                            <h3>Respiratory Tension - Resting</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_72 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_72 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_72" name="mobilelistitem1_72" dsid="mobilelistitem1_72"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_72 '>
+                            <h3>Respiratory Flow - Resting</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_74 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_74 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_74" name="mobilelistitem1_74" dsid="mobilelistitem1_74"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_74 '>
+                            <h3>Respiratory Variability - Resting</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem1_76 -->
+                        <li onclick="" class=' CarePass_BodyMeasurements_mobilelistitem1_76 '>
+                            <a id="CarePass_BodyMeasurements_mobilelistitem1_76" name="mobilelistitem1_76" dsid="mobilelistitem1_76"
+                            tabindex="4" class=' CarePass_BodyMeasurements_mobilelistitem1_76 '>
+                            <h3>Body Temperature</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="mobileFooter CarePass_BodyMeasurements_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="CarePass_BodyMeasurements_mobilefooter1"
+            data-theme="a">
+                <!-- mobilenavbar2_6 -->
+                <div data-role="navbar" id="CarePass_BodyMeasurements_mobilenavbar2_6" name="mobilenavbar2_6"
+                dsid="mobilenavbar2_6" class=" CarePass_BodyMeasurements_mobilenavbar2_6" data-theme="a"
+                style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem4_7 -->
+                        <li>
+                            <a data-theme="a" data-icon="grid" id="CarePass_BodyMeasurements_mobilenavbaritem4_7"
+                            dsid="mobilenavbaritem4_7" name="mobilenavbaritem4_7">
+                            All Activities
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_8 -->
+                        <li>
+                            <a data-theme="a" data-icon="star" id="CarePass_BodyMeasurements_mobilenavbaritem4_8"
+                            dsid="mobilenavbaritem4_8" name="mobilenavbaritem4_8">
+                            New Activity
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_9 -->
+                        <li>
+                            <a data-theme="a" data-icon="search" id="CarePass_BodyMeasurements_mobilenavbaritem4_9"
+                            dsid="mobilenavbaritem4_9" name="mobilenavbaritem4_9">
+                            Activity Filter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            link
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/CarePass2/CarePass2.css" rel="stylesheet"
+        />
+        <link href="files/resources/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CarePass_Styles.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/childbrowser.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Validate.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Charts.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/CarePass_Login.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        $(document).bind("mobileinit", function()
+        {
+            $.mobile.page.prototype.options.degradeInputs.date = true;
+        });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="link" id="link" class="type-interior"
+        data-theme="a" data-add-back-btn="true" data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="link_mobileheader" class=' link_mobileheader '>
+                <h1 dsid="mobileheader">
+                    Now What?
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="link_mobilecontainer" name="mobilecontainer" class=" link_mobilecontainer"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="link.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="link.js">
+                </script>
+                <!-- mobilelabel_51 -->
+                <div name="mobilelabel_51" id="link_mobilelabel_51" dsid="mobilelabel_51" data-role="appery_label"
+                class=' link_mobilelabel_51 '>
+                    Content For:
+                </div>
+                <!-- procedure -->
+                <div name="procedure" id="link_procedure" dsid="procedure" data-role="appery_label"
+                class=' link_procedure '>
+                </div>
+                <!-- spacer_72 -->
+                <div id="link_spacer_72" dsid="spacer_72" class='mobilespacer link_spacer_72'>
+                </div>
+                <!-- mobilegroupedbuttons_47 -->
+                <div data-role="controlgroup" name="mobilegroupedbuttons_47" id="link_mobilegroupedbuttons_47"
+                dsid="mobilegroupedbuttons_47" class="link_mobilegroupedbuttons_47">
+                    <!-- mobilebutton_48 -->
+                    <a data-role="button" name="mobilebutton_48" dsid="mobilebutton_48" class='  link_mobilebutton_48'
+                    id="link_mobilebutton_48" data-corners="true" data-icon="info" data-iconpos="left"
+                    x-apple-data-detectors="false" data-theme="a" reRender='mobilegroupedbuttons_47'>
+                    Healthwise Decision Point
+                    </a>
+                    <!-- mobilebutton_49 -->
+                    <a data-role="button" name="mobilebutton_49" dsid="mobilebutton_49" class='  link_mobilebutton_49'
+                    id="link_mobilebutton_49" data-corners="true" data-icon="info" data-iconpos="left"
+                    x-apple-data-detectors="false" data-theme="a" reRender='mobilegroupedbuttons_47'>
+                    Choosing Wisely
+                    </a>
+                    <!-- mobilebutton_50 -->
+                    <a data-role="button" name="mobilebutton_50" dsid="mobilebutton_50" class='  link_mobilebutton_50'
+                    id="link_mobilebutton_50" data-corners="true" data-icon="info" data-iconpos="left"
+                    x-apple-data-detectors="false" data-theme="a" reRender='mobilegroupedbuttons_47'>
+                    Button 3
+                    </a>
+                </div>
+                <!-- mobilelist_54 -->
+                <ul data-role="listview" id="link_mobilelist_54" class=' link_mobilelist_54 ' name="mobilelist_54"
+                dsid="mobilelist_54" data-inset="true" data-theme="a" data-divider-theme="b" data-count-theme="b"
+                style="">
+                    <!-- mobilelistitem_55 -->
+                    <li onclick="" id="link_mobilelistitem_55" name="mobilelistitem_55" dsid="mobilelistitem_55"
+                    class=' link_mobilelistitem_55 '>
+                        <div class="ui-li-static-container">
+                            <!-- mobilelabel_67 -->
+                            <div name="mobilelabel_67" id="link_mobilelabel_67" dsid="mobilelabel_67" data-role="appery_label"
+                            class=' link_mobilelabel_67 '>
+                                Image Gently
+                            </div>
+                            <!-- mobilelabel_68 -->
+                            <div name="mobilelabel_68" id="link_mobilelabel_68" dsid="mobilelabel_68" data-role="appery_label"
+                            class=' link_mobilelabel_68 '>
+                                Radiation Safety in Adults
+                            </div>
+                            <!-- mobileimage_71 -->
+                            <img class="imagefig link_mobileimage_71" src="files/views/assets/image/logo_1374163713.png"
+                            id="link_mobileimage_71" dsid="mobileimage_71" name="mobileimage_71" />
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                    <!-- mobilelistitem_57 -->
+                    <li onclick="" id="link_mobilelistitem_57" name="mobilelistitem_57" dsid="mobilelistitem_57"
+                    class=' link_mobilelistitem_57 '>
+                        <div class="ui-li-static-container">
+                            <!-- mobilelabel_61 -->
+                            <div name="mobilelabel_61" id="link_mobilelabel_61" dsid="mobilelabel_61" data-role="appery_label"
+                            class=' link_mobilelabel_61 '>
+                                Healthwise
+                            </div>
+                            <!-- mobilelabel_53 -->
+                            <div name="mobilelabel_53" id="link_mobilelabel_53" dsid="mobilelabel_53" data-role="appery_label"
+                            class=' link_mobilelabel_53 '>
+                                Image Test Decision Point
+                            </div>
+                            <!-- mobileimage_66 -->
+                            <img class="imagefig link_mobileimage_66" src="files/views/assets/image/imgres-3_1374007522.jpeg"
+                            id="link_mobileimage_66" dsid="mobileimage_66" name="mobileimage_66" />
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                    <!-- mobilelistitem_59 -->
+                    <li onclick="" id="link_mobilelistitem_59" name="mobilelistitem_59" dsid="mobilelistitem_59"
+                    class=' link_mobilelistitem_59 '>
+                        <div class="ui-li-static-container">
+                            <!-- mobilelabel_62 -->
+                            <div name="mobilelabel_62" id="link_mobilelabel_62" dsid="mobilelabel_62" data-role="appery_label"
+                            class=' link_mobilelabel_62 '>
+                                Choosing Wisely
+                            </div>
+                            <!-- mobilelabel_63 -->
+                            <div name="mobilelabel_63" id="link_mobilelabel_63" dsid="mobilelabel_63" data-role="appery_label"
+                            class=' link_mobilelabel_63 '>
+                                Chest Imaing
+                            </div>
+                            <!-- mobileimage_69 -->
+                            <img class="imagefig link_mobileimage_69" src="files/views/assets/image/imgres.jpeg"
+                            id="link_mobileimage_69" dsid="mobileimage_69" name="mobileimage_69" />
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- youtube -->
+                <div name="youtube" id="link_youtube" dsid="youtube" data-role="appery_label" class=' link_youtube '>
+                    Reference Videos
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class=" link_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="link_mobilefooter" data-theme="a">
+            </div>
+        </div>
+    </body>
+
+</html>

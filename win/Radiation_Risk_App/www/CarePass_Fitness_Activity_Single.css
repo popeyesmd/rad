@@ -1,0 +1,735 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.3.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar2_6 */
+.CarePass_Fitness_Activity_Single_mobilenavbar2_6 {
+
+}
+.CarePass_Fitness_Activity_Single_mobilenavbar2_6 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .CarePass_Fitness_Activity_Single_mobilenavbar2_6 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .CarePass_Fitness_Activity_Single_mobilenavbar2_6 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.CarePass_Fitness_Activity_Single_mobilenavbar2_6 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.CarePass_Fitness_Activity_Single_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* activityTitle */
+.CarePass_Fitness_Activity_Single_activityTitle {
+	font-weight: normal; font-style: italic; text-align: center; font-size: 22px;
+	margin: 0px 0px 15px 0px;
+	word-wrap: break-word;
+}
+/* singleActivity */
+.CarePass_Fitness_Activity_Single_singleActivity {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.CarePass_Fitness_Activity_Single_singleActivity > tr > td {
+	vertical-align: top;
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_0, .CarePass_Fitness_Activity_Single_singleActivity_row_0 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_1, .CarePass_Fitness_Activity_Single_singleActivity_row_1 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_2, .CarePass_Fitness_Activity_Single_singleActivity_row_2 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_3, .CarePass_Fitness_Activity_Single_singleActivity_row_3 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_4, .CarePass_Fitness_Activity_Single_singleActivity_row_4 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_5, .CarePass_Fitness_Activity_Single_singleActivity_row_5 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_6, .CarePass_Fitness_Activity_Single_singleActivity_row_6 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_7, .CarePass_Fitness_Activity_Single_singleActivity_row_7 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_8, .CarePass_Fitness_Activity_Single_singleActivity_row_8 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_9, .CarePass_Fitness_Activity_Single_singleActivity_row_9 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_10, .CarePass_Fitness_Activity_Single_singleActivity_row_10 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_11, .CarePass_Fitness_Activity_Single_singleActivity_row_11 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_12, .CarePass_Fitness_Activity_Single_singleActivity_row_12 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_13, .CarePass_Fitness_Activity_Single_singleActivity_row_13 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_14, .CarePass_Fitness_Activity_Single_singleActivity_row_14 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_15, .CarePass_Fitness_Activity_Single_singleActivity_row_15 > td {
+	height: auto
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_16, .CarePass_Fitness_Activity_Single_singleActivity_row_16 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_17, .CarePass_Fitness_Activity_Single_singleActivity_row_17 > td {
+	height: 30px
+}
+.CarePass_Fitness_Activity_Single_singleActivity_row_18, .CarePass_Fitness_Activity_Single_singleActivity_row_18 > td {
+	height: 30px
+}
+/* mobilegridcell_11 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* qwe */
+.CarePass_Fitness_Activity_Single_qwe {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_12 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_12 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saDescription */
+.CarePass_Fitness_Activity_Single_saDescription {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_13 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_111 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_111 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_14 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saNotes */
+.CarePass_Fitness_Activity_Single_saNotes {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_15 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_15 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_63 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_63 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_16 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saType */
+.CarePass_Fitness_Activity_Single_saType {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_17 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* ikjsfhisuhf */
+.CarePass_Fitness_Activity_Single_ikjsfhisuhf {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_18 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saTypeextra */
+.CarePass_Fitness_Activity_Single_saTypeextra {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_19 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_65 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_65 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_20 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saDate */
+.CarePass_Fitness_Activity_Single_saDate {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_21 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_21 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_21 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_66 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_66 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_22 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_22 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saStarttime */
+.CarePass_Fitness_Activity_Single_saStarttime {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_23 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_23 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_67 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_67 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_24 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saStartcity */
+.CarePass_Fitness_Activity_Single_saStartcity {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_25 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_25 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_25 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_68 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_68 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_26 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_26 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saStartstate */
+.CarePass_Fitness_Activity_Single_saStartstate {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_27 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_27 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_69 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_69 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_28 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_28 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_28 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saStartcountry */
+.CarePass_Fitness_Activity_Single_saStartcountry {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_29 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_29 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_29 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_71 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_71 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_30 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_30 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saEndcity */
+.CarePass_Fitness_Activity_Single_saEndcity {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_31 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_31 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_31 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_72 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_72 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_32 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_32 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_32 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saEndstate */
+.CarePass_Fitness_Activity_Single_saEndstate {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_33 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_33 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_33 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_73 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_73 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_34 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_34 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_34 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saEndcountry */
+.CarePass_Fitness_Activity_Single_saEndcountry {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_35 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_35 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_74 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_74 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_36 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_36 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saCaloriesburned */
+.CarePass_Fitness_Activity_Single_saCaloriesburned {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_37 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_37 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_37 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_75 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_75 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_38 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_38 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_38 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saDistance */
+.CarePass_Fitness_Activity_Single_saDistance {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* saDistanceunit */
+.CarePass_Fitness_Activity_Single_saDistanceunit {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 5px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_39 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_39 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_39 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_77 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_77 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_40 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_40 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_40 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saDuration */
+.CarePass_Fitness_Activity_Single_saDuration {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_41 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_41 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_41 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_78 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_78 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_42 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_42 {
+	height:auto !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_42 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saMeasurementtype */
+.CarePass_Fitness_Activity_Single_saMeasurementtype {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_43 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_43 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_43 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_79 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_79 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_44 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_44 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_44 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saMeasurementvalue */
+.CarePass_Fitness_Activity_Single_saMeasurementvalue {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_45 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_45 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel1_80 */
+.CarePass_Fitness_Activity_Single_mobilelabel1_80 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_46 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_46 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_46 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* saMeasurementunit */
+.CarePass_Fitness_Activity_Single_saMeasurementunit {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_114 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_114 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_114 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* backBtn */
+#CarePass_Fitness_Activity_Single_backBtn {
+
+}
+.ui-btn.CarePass_Fitness_Activity_Single_backBtn {
+	margin: 5px 0px 0px 0px;
+}
+/* mobilegridcell_115 */
+.CarePass_Fitness_Activity_Single_mobilegridcell_115 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.CarePass_Fitness_Activity_Single_mobilegridcell_115 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* delActivity */
+#CarePass_Fitness_Activity_Single_delActivity {
+
+}
+.ui-btn.CarePass_Fitness_Activity_Single_delActivity {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter1 */
+.CarePass_Fitness_Activity_Single_mobilefooter1 {
+	min-height:38px;
+}
+/* mobilenavbar2_2 */
+.CarePass_Fitness_Activity_Single_mobilenavbar2_2 {
+
+}
+.CarePass_Fitness_Activity_Single_mobilenavbar2_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .CarePass_Fitness_Activity_Single_mobilenavbar2_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .CarePass_Fitness_Activity_Single_mobilenavbar2_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.CarePass_Fitness_Activity_Single_mobilenavbar2_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}

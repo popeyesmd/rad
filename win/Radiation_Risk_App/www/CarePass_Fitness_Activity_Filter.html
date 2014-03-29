@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            CarePass_Fitness_Activity_Filter
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/CarePass2/CarePass2.css" rel="stylesheet"
+        />
+        <link href="files/resources/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CarePass_Styles.css"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/childbrowser.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/Helper.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Validate.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Charts.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/CarePass_Login.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        $(document).bind("mobileinit", function()
+        {
+            $.mobile.page.prototype.options.degradeInputs.date = true;
+        });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="CarePass_Fitness_Activity_Filter"
+        id="CarePass_Fitness_Activity_Filter" class="type-interior" data-theme="a" data-add-back-btn="false"
+        data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="a" name="mobileheader"
+            id="CarePass_Fitness_Activity_Filter_mobileheader" class='mobileHeader CarePass_Fitness_Activity_Filter_mobileheader '>
+                <!-- mobilenavbar2_10 -->
+                <div data-role="navbar" id="CarePass_Fitness_Activity_Filter_mobilenavbar2_10" name="mobilenavbar2_10"
+                dsid="mobilenavbar2_10" class=" CarePass_Fitness_Activity_Filter_mobilenavbar2_10"
+                data-theme="a" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem4_11 -->
+                        <li>
+                            <a data-theme="a" data-icon="grid" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_11"
+                            dsid="mobilenavbaritem4_11" name="mobilenavbaritem4_11">
+                            Measurements
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_12 -->
+                        <li>
+                            <a data-theme="a" data-icon="star" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_12"
+                            dsid="mobilenavbaritem4_12" name="mobilenavbaritem4_12">
+                            New Measurement
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_13 -->
+                        <li>
+                            <a data-theme="a" data-icon="info" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_13"
+                            dsid="mobilenavbaritem4_13" name="mobilenavbaritem4_13">
+                            Timeline
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="CarePass_Fitness_Activity_Filter_mobilecontainer" name="mobilecontainer"
+            class="mobileContent CarePass_Fitness_Activity_Filter_mobilecontainer" dsid="mobilecontainer"
+            data-theme="a">
+                <link href="CarePass_Fitness_Activity_Filter.css" rel="stylesheet" type="text/css"
+                />
+                <script type="text/javascript" src="CarePass_Fitness_Activity_Filter.js">
+                </script>
+                <!-- mobilelabel1_22 -->
+                <div name="mobilelabel1_22" id="CarePass_Fitness_Activity_Filter_mobilelabel1_22"
+                dsid="mobilelabel1_22" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_22 '>
+                    From Date:
+                </div>
+                <!-- formDate -->
+                <div data-role="fieldcontain" id="CarePass_Fitness_Activity_Filter_formDate" dsid="formDate"
+                name="formDate" tiggzitype="object" apperytype="object" apperyclass="datepicker"
+                tiggziclass="datepicker" data-theme="a" class=' CarePass_Fitness_Activity_Filter_formDate '>
+                    <div class="datePickerControls">
+                        <a title="Open Date Picker" class="datepickeropenbutton ui-input-clear ui-btn ui-body ui-body-a
+                        ui-btn-up-a ui-btn-icon-notext ui-btn-corner-all ui-shadow" href="#" data-theme="a" style="margin-top:3px; vertical-align: middle; display: inline-block;">
+                        <span class="ui-btn-inner ui-btn-corner-all">
+                        <span class="ui-btn-text">Open Date Picker</span>
+                        <span class="ui-icon ui-icon-grid ui-icon-shadow"></span>
+                        </span>
+                        </a>
+                        <div class="inputContainer">
+                            <input type="text" data-theme="a" value="" tabindex="3" />
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilelabel1_23 -->
+                <div name="mobilelabel1_23" id="CarePass_Fitness_Activity_Filter_mobilelabel1_23"
+                dsid="mobilelabel1_23" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_23 '>
+                    To Date:
+                </div>
+                <!-- toDate -->
+                <div data-role="fieldcontain" id="CarePass_Fitness_Activity_Filter_toDate" dsid="toDate"
+                name="toDate" tiggzitype="object" apperytype="object" apperyclass="datepicker" tiggziclass="datepicker"
+                data-theme="a" class=' CarePass_Fitness_Activity_Filter_toDate '>
+                    <div class="datePickerControls">
+                        <a title="Open Date Picker" class="datepickeropenbutton ui-input-clear ui-btn ui-body ui-body-a
+                        ui-btn-up-a ui-btn-icon-notext ui-btn-corner-all ui-shadow" href="#" data-theme="a" style="margin-top:3px; vertical-align: middle; display: inline-block;">
+                        <span class="ui-btn-inner ui-btn-corner-all">
+                        <span class="ui-btn-text">Open Date Picker</span>
+                        <span class="ui-icon ui-icon-grid ui-icon-shadow"></span>
+                        </span>
+                        </a>
+                        <div class="inputContainer">
+                            <input type="text" data-theme="a" value="" tabindex="4" />
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilelabel1_26 -->
+                <div name="mobilelabel1_26" id="CarePass_Fitness_Activity_Filter_mobilelabel1_26"
+                dsid="mobilelabel1_26" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_26 '>
+                    Activity Type:
+                </div>
+                <!-- activityType -->
+                <div data-role="fieldcontain" class="CarePass_Fitness_Activity_Filter_activityType ">
+                    <select name="activityType" id="CarePass_Fitness_Activity_Filter_activityType" dsid="activityType"
+                    data-theme="a" data-inline="false" data-mini="false" data-icon="arrow-d" data-iconpos="right"
+                    data-native-menu="false" tabindex="1" appery-class="CarePass_Fitness_Activity_Filter_activityType">
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-0" value="Running" reRender="activityType"
+                        dsid="activityType-0" selected="selected">
+                            Running
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-1" value="Other / Wellness"
+                        reRender="activityType" dsid="activityType-1">
+                            Other / Wellness
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-2" value="Weight Training"
+                        reRender="activityType" dsid="activityType-2">
+                            Weight Training
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-3" value="Walking" reRender="activityType"
+                        dsid="activityType-3">
+                            Walking
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-4" value="Hiking" reRender="activityType"
+                        dsid="activityType-4">
+                            Hiking
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-5" value="Swimming" reRender="activityType"
+                        dsid="activityType-5">
+                            Swimming
+                        </option>
+                        <option id="CarePass_Fitness_Activity_Filter_activityType-6" value="Cycling" reRender="activityType"
+                        dsid="activityType-6">
+                            Cycling
+                        </option>
+                    </select>
+                </div>
+                <!-- filterBtn -->
+                <a data-role="button" name="filterBtn" dsid="filterBtn" class=' button CarePass_Fitness_Activity_Filter_filterBtn'
+                id="CarePass_Fitness_Activity_Filter_filterBtn" data-corners="true" data-icon="search"
+                data-iconpos="right" x-apple-data-detectors="false" data-mini="false" data-theme="a"
+                tabindex="2">
+                Search
+                </a>
+                <!-- simpleActivity -->
+                <div data-role="collapsible" id="CarePass_Fitness_Activity_Filter_simpleActivity"
+                name="simpleActivity" dsid="simpleActivity" data-collapsed="true" data-theme="a"
+                data-content-theme="a" data-iconpos='left' class='simpleActivity CarePass_Fitness_Activity_Filter_simpleActivity ui-corner-all'>
+                    <h3 id="CarePass_Fitness_Activity_Filter_simpleActivityTitle" name="simpleActivityTitle"
+                    dsid="simpleActivityTitle">
+                        text
+                    </h3>
+                    <!-- mobilegrid_30 -->
+                    <div class="CarePass_Fitness_Activity_Filter_mobilegrid_30_wrapper">
+                        <table id="CarePass_Fitness_Activity_Filter_mobilegrid_30" class="mobilegrid CarePass_Fitness_Activity_Filter_mobilegrid_30"
+                        dsid="mobilegrid_30" name="mobilegrid_30" cellpadding=0 cellspacing=0>
+                            <col style="width:126px;" />
+                            <col style="width:auto;" />
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_0">
+                                <!-- mobilegridcell_31 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_31" name="mobilegridcell_31"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_31" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel1_41 -->
+                                        <div name="mobilelabel1_41" id="CarePass_Fitness_Activity_Filter_mobilelabel1_41"
+                                        dsid="mobilelabel1_41" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_41 '>
+                                            Type:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_32 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_32" name="mobilegridcell_32"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_32" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- simpleActuvityType -->
+                                        <div name="simpleActuvityType" id="CarePass_Fitness_Activity_Filter_simpleActuvityType"
+                                        dsid="simpleActuvityType" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_simpleActuvityType '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_1">
+                                <!-- mobilegridcell_33 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_33" name="mobilegridcell_33"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_33" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel1_42 -->
+                                        <div name="mobilelabel1_42" id="CarePass_Fitness_Activity_Filter_mobilelabel1_42"
+                                        dsid="mobilelabel1_42" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_42 '>
+                                            Date:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_34 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_34" name="mobilegridcell_34"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_34" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- simpleActuvityDate -->
+                                        <div name="simpleActuvityDate" id="CarePass_Fitness_Activity_Filter_simpleActuvityDate"
+                                        dsid="simpleActuvityDate" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_simpleActuvityDate '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_2">
+                                <!-- mobilegridcell_35 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_35" name="mobilegridcell_35"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_35" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel1_43 -->
+                                        <div name="mobilelabel1_43" id="CarePass_Fitness_Activity_Filter_mobilelabel1_43"
+                                        dsid="mobilelabel1_43" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_43 '>
+                                            Calories burned:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_36 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_36" name="mobilegridcell_36"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_36" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- simpleActuvityCalories -->
+                                        <div name="simpleActuvityCalories" id="CarePass_Fitness_Activity_Filter_simpleActuvityCalories"
+                                        dsid="simpleActuvityCalories" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_simpleActuvityCalories '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_3">
+                                <!-- mobilegridcell_37 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_37" name="mobilegridcell_37"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_37" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel1_44 -->
+                                        <div name="mobilelabel1_44" id="CarePass_Fitness_Activity_Filter_mobilelabel1_44"
+                                        dsid="mobilelabel1_44" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_44 '>
+                                            Distance:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_38 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_38" name="mobilegridcell_38"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_38" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- simpleActuvityDistance -->
+                                        <div name="simpleActuvityDistance" id="CarePass_Fitness_Activity_Filter_simpleActuvityDistance"
+                                        dsid="simpleActuvityDistance" data-role="appery_label" class='distance CarePass_Fitness_Activity_Filter_simpleActuvityDistance '>
+                                            Label
+                                        </div>
+                                        <!-- simpleActuvityDistanceUnits -->
+                                        <div name="simpleActuvityDistanceUnits" id="CarePass_Fitness_Activity_Filter_simpleActuvityDistanceUnits"
+                                        dsid="simpleActuvityDistanceUnits" data-role="appery_label" class='units CarePass_Fitness_Activity_Filter_simpleActuvityDistanceUnits '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_4">
+                                <!-- mobilegridcell_39 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_39" name="mobilegridcell_39"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_39" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel1_45 -->
+                                        <div name="mobilelabel1_45" id="CarePass_Fitness_Activity_Filter_mobilelabel1_45"
+                                        dsid="mobilelabel1_45" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_mobilelabel1_45 '>
+                                            Duration:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_40 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_40" name="mobilegridcell_40"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_40" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- simpleActuvityDuration -->
+                                        <div name="simpleActuvityDuration" id="CarePass_Fitness_Activity_Filter_simpleActuvityDuration"
+                                        dsid="simpleActuvityDuration" data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_simpleActuvityDuration '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="CarePass_Fitness_Activity_Filter_mobilegrid_30_row_5">
+                                <!-- mobilegridcell_46 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_46" name="mobilegridcell_46"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_46" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- activityID -->
+                                        <div name="activityID" id="CarePass_Fitness_Activity_Filter_activityID" dsid="activityID"
+                                        data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_activityID '>
+                                            Label
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_47 -->
+                                <td id="CarePass_Fitness_Activity_Filter_mobilegridcell_47" name="mobilegridcell_47"
+                                class="CarePass_Fitness_Activity_Filter_mobilegridcell_47" colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- showMore -->
+                                        <a data-role="button" name="showMore" dsid="showMore" class=' showMore CarePass_Fitness_Activity_Filter_showMore'
+                                        id="CarePass_Fitness_Activity_Filter_showMore" data-corners="true" data-icon="arrow-r"
+                                        data-iconpos="right" x-apple-data-detectors="false" data-inline="true" data-mini="true"
+                                        data-theme="a" tabindex="6">
+                                        Show more
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- filter_error -->
+                <div name="filter_error" id="CarePass_Fitness_Activity_Filter_filter_error" dsid="filter_error"
+                data-role="appery_label" class='labelClass CarePass_Fitness_Activity_Filter_filter_error '>
+                    No data found!
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="mobileFooter CarePass_Fitness_Activity_Filter_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="CarePass_Fitness_Activity_Filter_mobilefooter1"
+            data-theme="a">
+                <!-- mobilenavbar2_6 -->
+                <div data-role="navbar" id="CarePass_Fitness_Activity_Filter_mobilenavbar2_6" name="mobilenavbar2_6"
+                dsid="mobilenavbar2_6" class=" CarePass_Fitness_Activity_Filter_mobilenavbar2_6"
+                data-theme="a" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem4_7 -->
+                        <li>
+                            <a data-theme="a" data-icon="grid" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_7"
+                            dsid="mobilenavbaritem4_7" name="mobilenavbaritem4_7">
+                            All Activities
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_8 -->
+                        <li>
+                            <a data-theme="a" data-icon="star" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_8"
+                            dsid="mobilenavbaritem4_8" name="mobilenavbaritem4_8">
+                            New Activity
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem4_9 -->
+                        <li>
+                            <a data-theme="a" class="ui-btn-active ui-state-persist" data-icon="search" id="CarePass_Fitness_Activity_Filter_mobilenavbaritem4_9"
+                            dsid="mobilenavbaritem4_9" name="mobilenavbaritem4_9">
+                            Activity Filter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

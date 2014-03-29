@@ -1,0 +1,205 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.3.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar2_2 */
+.CarePass_BodyMeasurements_New_mobilenavbar2_2 {
+
+}
+.CarePass_BodyMeasurements_New_mobilenavbar2_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .CarePass_BodyMeasurements_New_mobilenavbar2_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .CarePass_BodyMeasurements_New_mobilenavbar2_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.CarePass_BodyMeasurements_New_mobilenavbar2_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.CarePass_BodyMeasurements_New_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel1_14 */
+.CarePass_BodyMeasurements_New_mobilelabel1_14 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* addMType */
+.CarePass_BodyMeasurements_New_addMType {
+	margin: 0px 0px 10px 0px;
+}
+/* mobilelabel1_17 */
+.CarePass_BodyMeasurements_New_mobilelabel1_17 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* addMValue */
+.CarePass_BodyMeasurements_New_addMValue {
+	margin: 0px 0px 10px 0px;
+}
+/* mobilelabel1_19 */
+.CarePass_BodyMeasurements_New_mobilelabel1_19 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* addMUnits */
+.CarePass_BodyMeasurements_New_addMUnits {
+	margin: 0px 0px 10px 0px;
+}
+/* mobilelabel1_22 */
+.CarePass_BodyMeasurements_New_mobilelabel1_22 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* addMDate */
+.CarePass_BodyMeasurements_New_addMDate {
+	margin: 0px 0px 10px 0px;
+}
+.CarePass_BodyMeasurements_New_addMDate .datePickerControls {
+	position:relative;
+	top:0;
+	padding-right:45px;
+}
+.CarePass_BodyMeasurements_New_addMDate .datepickeropenbutton {
+	position:absolute;
+	right:0;
+}
+/* mobilelabel1_24 */
+.CarePass_BodyMeasurements_New_mobilelabel1_24 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* mobilegrid_25 */
+.CarePass_BodyMeasurements_New_mobilegrid_25 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 10px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.CarePass_BodyMeasurements_New_mobilegrid_25 > tr > td {
+	vertical-align: top;
+}
+.CarePass_BodyMeasurements_New_mobilegrid_25_row_0, .CarePass_BodyMeasurements_New_mobilegrid_25_row_0 > td {
+	height: auto
+}
+/* mobilegridcell_26 */
+.CarePass_BodyMeasurements_New_mobilegridcell_26 {
+	height:auto !important;
+	width:63px;
+	padding: 0px 10px 0px 0px;
+}
+.CarePass_BodyMeasurements_New_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* addMH */
+.CarePass_BodyMeasurements_New_addMH {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilelabel1_48 */
+.CarePass_BodyMeasurements_New_mobilelabel1_48 {
+	font-weight: normal; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_27 */
+.CarePass_BodyMeasurements_New_mobilegridcell_27 {
+	height:auto !important;
+	width:63px;
+	padding: 0px 10px 0px 0px;
+}
+.CarePass_BodyMeasurements_New_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* addMM */
+.CarePass_BodyMeasurements_New_addMM {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilelabel1_49 */
+.CarePass_BodyMeasurements_New_mobilelabel1_49 {
+	font-weight: normal; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_30 */
+.CarePass_BodyMeasurements_New_mobilegridcell_30 {
+	height:auto !important;
+	width:63px;
+	padding: 0px 10px 0px 0px;
+}
+.CarePass_BodyMeasurements_New_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* addMS */
+.CarePass_BodyMeasurements_New_addMS {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilegridcell_31 */
+.CarePass_BodyMeasurements_New_mobilegridcell_31 {
+	height:auto !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.CarePass_BodyMeasurements_New_mobilegridcell_31 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* addMAmPm */
+.CarePass_BodyMeasurements_New_addMAmPm {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilelabel1_52 */
+.CarePass_BodyMeasurements_New_mobilelabel1_52 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+}
+/* notes */
+.CarePass_BodyMeasurements_New_notes {
+	margin: 0px 0px 10px 0px;
+}
+/* mobilelabel1_50 */
+.CarePass_BodyMeasurements_New_mobilelabel1_50 {
+	font-weight: normal; font-style: italic; text-align: left;
+	margin: 0px 0px 10px 0px;
+	word-wrap: break-word;
+}
+/* addMPost */
+#CarePass_BodyMeasurements_New_addMPost {
+
+}
+.ui-btn.CarePass_BodyMeasurements_New_addMPost {
+	margin: 0px 0px 0px 0px;
+}
+/* mobilefooter1 */
+.CarePass_BodyMeasurements_New_mobilefooter1 {
+	min-height:38px;
+}
+/* mobilenavbar2_10 */
+.CarePass_BodyMeasurements_New_mobilenavbar2_10 {
+
+}
+.CarePass_BodyMeasurements_New_mobilenavbar2_10 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .CarePass_BodyMeasurements_New_mobilenavbar2_10 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .CarePass_BodyMeasurements_New_mobilenavbar2_10 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.CarePass_BodyMeasurements_New_mobilenavbar2_10 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}

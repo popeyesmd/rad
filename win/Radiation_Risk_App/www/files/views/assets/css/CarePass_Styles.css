@@ -1,0 +1,129 @@
+.loginBtn {
+	margin:4px auto!important; 
+}
+.distance, .units, .value_units {
+    float: left;
+    width: auto;
+}
+
+#ajaxBusy img {
+	margin-left: -16px;
+    margin-top: -16px;
+}
+
+.mobileContent .TimeDots {
+	float: right;
+    width: auto;
+    height: auto;
+    margin: -25px -7px 0 0;
+}
+
+.mobileContent .body_measurement .ui-li-heading {
+	font-size: 12px;
+}
+
+.simpleMeasurement td,
+.singleMeasurement td {
+	vertical-align: top;
+}
+
+.mobileContent .loginBtn {
+	background: url(../image/login.png);
+    border: none;
+    width: 280px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.mobileContent .greetingBlock,
+.mobileContent .allActivities,
+.mobileContent .messageText {
+	width: 100%;
+    height: auto;
+}
+
+.mobileContent .singleActivity td,
+.mobileContent .singleMeasurement td {
+    padding: 0 0 5px 0;
+    height: auto;
+    vertical-align: top;
+}
+
+.mobileContent .singleActivity tr td:first-child,
+.mobileContent .singleMeasurement tr td:first-child {
+	padding: 0 5px 5px 0;
+}
+
+.mobileContent .singleActivity td .labelClass,
+.mobileContent .singleActivity td .value_units,
+.mobileContent .singleMeasurement td .labelClass {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+}
+
+.ui-selectmenu .ui-header {
+	display: none;
+}
+
+.mobileContent .showMore,
+.mobileContent .deleteBtn {
+    float: right;
+}
+
+body #ajaxBusy {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+body .ui-popup-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/*------------------------------------------------------------------*/
+
+/*[data-role=header].slidedown {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.slidedown.out,
+.slidedown.in {
+    -webkit-transform: none !important;
+	-webkit-animation-name: none !important;
+	-moz-animation-name: none !important;
+	animation-name: none !important;
+    -webkit-animation-timing-function: none !important;
+	-moz-animation-timing-function: none !important;
+    width: 100%;
+    -webkit-animation-timing-function: none !important;
+	-moz-animation-timing-function: none !important;
+}
+
+.slidedown.in.reverse,
+.slidedown.out.reverse{
+	-webkit-animation-name: none !important;
+	-moz-animation-name: none !important;
+	animation-name: none !important;
+    -webkit-transform: none !important;
+	-moz-transform: none !important;
+	transform: none !important;
+    width: 100%;
+    -webkit-animation-timing-function: none !important;
+	-moz-animation-timing-function: none !important;
+}
+
+.in, .out {
+	animation: none;
+	-moz-animation: none;
+	-webkit-animation: none;
+}*/
